@@ -1,5 +1,5 @@
-<!-- app/View/Users/add.ctp -->
-<div class="users form">
+<div class="container">
+<div class="hero-unit">
 <?php echo $this->Form->create('User'); ?>
     <fieldset>
         <legend><?php echo __('Add User'); ?></legend>
@@ -11,4 +11,5 @@
     ?>
     </fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
+</div>
 </div>
