@@ -1,6 +1,5 @@
-//app/View/Users/login.ctp
-
-<div class="users form">
+<div class="container">
+<div class="hero-unit">
 <?php echo $this->Session->flash('auth'); ?>
 <?php echo $this->Form->create('User'); ?>
     <fieldset>
@@ -12,4 +11,5 @@
     ?>
     </fieldset>
 <?php echo $this->Form->end(__('Login')); ?>
+</div>
 </div>
