@@ -53,12 +53,18 @@ echo $this->fetch('script');
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a href="http://localhost:3000/" target="_blank" class="brand">Cake PHP</a>
+          <a href="#" target="_blank" class="brand">Cake PHP</a>
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="#" target="_blank">Home</a></li>
               <li><a href="#" target="_blank">About</a></li>
               <li><a href="#" target="_blank">Contact</a></li>
+	      <?php	if ($this->Session->read('Auth.User')){ ?>
+	      
+		<li><a href="#" target="_blank">Logout</a></li>
+		<?php } else { ?>
+		<li><a href="#" target="_blank">Login</a></li>
+		<?php } ?>
             </ul>
           	<ul class="nav navbar-nav navbar-right">
           	 <li class="dropdown">

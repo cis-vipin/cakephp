@@ -1,8 +1,10 @@
 <!-- File: /app/View/Posts/index.ctp -->
+<div class="container">
+<div class="hero-unit">
 
-<h1>Blog posts</h1>
+<h4>Blog posts</h4>
 <p><?php echo $this->Html->link('Add Post', array('action' => 'add')); ?></p>
-<table>
+<table class="table table-striped table-bordered table-condensed" >
     <tr>
         <th>Id</th>
         <th>Title</th>
@@ -33,7 +35,7 @@
             ?>
             <?php
                 echo $this->Html->link(
-                    'Edit', array('action' => 'edit', $post['Post']['id'])
+                    'Edit', array('action' => 'edit', $post['Post']['id'] , 'class' => 'btn btn-danger')
                 );
             ?>
         </td>
@@ -44,3 +46,5 @@
     <?php endforeach; ?>
 
 </table>
+</div>
+</div>
